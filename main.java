@@ -33,7 +33,7 @@ public static void main(String[]args){
 
         if (respuesta==respuestamaquina){
             System.out.println("que tonto empataste ");
-
+//aqui comparamos los resultados
         } else if(
                 (respuesta == 1 && respuestamaquina == 3) ||
                 (respuesta == 2 && respuestamaquina == 1)||
