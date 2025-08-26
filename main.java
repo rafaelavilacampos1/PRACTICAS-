@@ -1,4 +1,4 @@
-
+// programa que juega piedra papel o tijera con el usuario
 import java.util.Random;
 import java.util.Scanner;
 
