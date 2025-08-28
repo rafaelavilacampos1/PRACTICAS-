@@ -13,4 +13,5 @@ Abre una terminal con el archivo main.java
 
 Ejecuta el programa con el siguiente comando:
 
-javac practica.java java practica
+javac practica.java 
+java practica
