@@ -1,6 +1,8 @@
+//ejercicio 2 de la practica 1 (NUMEROS PRIMOS)
+// nombre : Rafael Avila Campos
 import java.util.Scanner;
 
-public class ej2 {
+public class ej2{
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
