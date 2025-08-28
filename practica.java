@@ -6,7 +6,7 @@ public class practica {
     public static void main(String[] args) {
         try (Scanner sc = new Scanner(System.in)) {
             int opcion;
-
+// menu para elegir entre el juego de piedra papel o tijera o el programa que determina si son numeros primos
             do {
                 System.out.println("Menu principal: elige un juego ");
                 System.out.println("Pulsa 1 para jugar piedra, papel o tijera");
@@ -19,7 +19,7 @@ public class practica {
                 }
 
                 opcion = sc.nextInt();
-
+// aqui tenemos los casos  o las elecciones que el usuario eligira
                 switch (opcion) {
                     case 1 -> piedrapapelotijera(sc);
                     case 2 -> primos(sc);
@@ -38,9 +38,9 @@ public class practica {
 
         int puntosmaquina = 0;
         int puntosjugador = 0;
-
+//bienvenida al juego de piedra papel o tijera
         System.out.println("Hola, bienvenido al juego de piedra, papel o tijera. Elige una opción para jugar.");
-
+//aqui tenemos que cuando el usuario o la maquina llegue a 2 puntos se acabe el ciclo
         while (puntosjugador < 2 && puntosmaquina < 2) {
             System.out.println("Introduce un número para elegir una opción:");
             System.out.println("1 - piedra");
@@ -48,20 +48,20 @@ public class practica {
             System.out.println("3 - tijera");
             System.out.println("0 - volver al menú principal");
             System.out.print("Tu elección: ");
-
+//Aqui le mostrara un error al intentar meter otro numero diferente al 1,2 y 3
             while (!sc.hasNextInt()) {
                 System.out.println("Opción no válida.");
                 sc.next(); // descarta entrada inválida
                 System.out.print("Tu elección: ");
             }
-
+//aqui se guarda las respuesta
             int respuesta = sc.nextInt();
-
+// opcion para salir de juego
             if (respuesta == 0) {
                 System.out.println("Saliendo del juego...");
                 return;
             }
-
+// aqui nos indica que solo hay opcion del 1 al 3
             if (respuesta < 1 || respuesta > 3) {
                 System.out.println("Opción no valida.");
                 continue;
@@ -75,13 +75,13 @@ public class practica {
             if (respuesta == respuestamaquina) {
                 System.out.println("Empate.");
             } else if (
-                (respuesta == 1 && respuestamaquina == 3) ||
+                (respuesta == 1 && respuestamaquina == 3) ||     //aqui tenemos las posibles conbinaciones
                 (respuesta == 2 && respuestamaquina == 1) ||
                 (respuesta == 3 && respuestamaquina == 2)
             ) {
                 puntosjugador++;
                 System.out.println("Ganaste la ronda.");
-            } else {
+            } else {                                           //aqui se van sumando los puntos del jugador o de la maquina 
                 puntosmaquina++;
                 System.out.println("Gano la máquina.");
             }
@@ -97,7 +97,7 @@ public class practica {
 
         }
     }
-
+// codigo de programa de indicar cuales son los numeros primos
     public static void primos(Scanner sc) {
         int x;
 
