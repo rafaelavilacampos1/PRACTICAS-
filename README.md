@@ -1,4 +1,5 @@
-# practica1
+# practicas java
+
 Integrantes:
 
 rafael avila campos 323101288
