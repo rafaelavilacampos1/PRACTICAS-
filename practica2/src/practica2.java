@@ -54,7 +54,7 @@ public class practica2 {
     // -------------------- Clase Libro --------------------
     /**
      * Representa un libro con ISBN, título, autor y hasta 3 géneros.
-     * No se usan arreglos para los géneros.
+     * 
      */
     static class Libro {
         private String isbn;
