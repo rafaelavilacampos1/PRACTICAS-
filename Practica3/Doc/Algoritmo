@@ -1,0 +1,73 @@
+Algoritmo para la crecacion del programa venta de auto
+
+Analizar el objetivo general del programa: permitir al usuario configurar un automóvil seleccionando diferentes opciones personalizadas.
+
+Identificar las clases necesarias para representar los componentes del automóvil:
+
+MarcaAutomovil
+
+Chasis
+
+Llanta
+
+SistemaElectronico
+
+Automovil
+
+Diseñar cada clase con sus respectivos atributos, constructor y método toString().
+
+Crear el método main y preparar el uso del objeto Scanner para leer la entrada del usuario.
+
+Mostrar al usuario un menú de marcas de automóviles disponibles.
+
+Según la marca seleccionada, si es necesario, mostrar otro menú para elegir el país de origen del automóvil.
+
+Asignar los valores correspondientes a la marca, el país y el precio de importación según la selección.
+
+Crear un objeto de la clase MarcaAutomovil con los datos obtenidos.
+
+Preguntar al usuario por el tipo de transmisión (manual o automática).
+
+Preguntar al usuario por el tipo de auto (compacto, semicompacto, sedán o deportivo).
+
+Preguntar al usuario el año del automóvil (entre 2023 y 2025).
+
+Solicitar al usuario que elija el color del chasis y el tipo de acabado (mate, brillante o metálico).
+
+Asignar un precio al acabado dependiendo de la selección del usuario.
+
+Crear un objeto de la clase Chasis con los datos del color, acabado y precio.
+
+Preguntar al usuario si desea añadir película anti-asalto.
+
+Mostrar un menú de marcas de llantas disponibles junto con su precio.
+
+Preguntar al usuario por el tamaño del rin (15, 16, 17, 18).
+
+Preguntar por el material del rin (aluminio o acero) y añadir el costo adicional correspondiente.
+
+Crear un objeto de la clase Llanta con los datos de marca, tamaño, material y precio final.
+
+Preguntar al usuario por el tipo de frenos (disco o tambor).
+
+Preguntar al usuario si desea añadir elementos del sistema electrónico:
+
+Pantalla digital
+
+Espejos electrónicos
+
+Cámara de reversa
+
+Sensor de reversa
+
+Crear un objeto de la clase SistemaElectronico con los valores booleanos correspondientes.
+
+Crear un objeto de la clase Automovil utilizando todos los objetos y valores recopilados.
+
+Mostrar al usuario el resumen completo del automóvil configurado utilizando el método toString().
+
+Preguntar al usuario si desea confirmar la compra del vehículo.
+
+Mostrar un mensaje final agradeciendo la compra o indicando que fue cancelada.
+
+Cerrar el objeto Scanner
